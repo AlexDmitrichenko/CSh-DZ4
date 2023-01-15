@@ -19,7 +19,6 @@ int GetDegree(int Num1)
 //цифр в числе. 452-> 11, 82-> 10, 9012-> 12
 /*Console.Write("Введите число: ");
 string Numb = Console.ReadLine()!;
-int Numb1 = Convert.ToInt32(Convert.ToString(Numb));
 int size = Numb.Length;
 Console.WriteLine($"Сумма цифр в числе: {GetSum(Numb)}");
 //Метод --------------------------------------------------------
