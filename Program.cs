@@ -19,22 +19,24 @@ int GetDegree(int Num1)
 //цифр в числе. 452-> 11, 82-> 10, 9012-> 12
 /*Console.Write("Введите число: ");
 string Numb = Console.ReadLine()!;
+int Numb1 = Convert.ToInt32(Convert.ToString(Numb));
+int size = Numb.Length;
 Console.WriteLine($"Сумма цифр в числе: {GetSum(Numb)}");
 //Метод --------------------------------------------------------
-int GetSum(string N)
+int GetSum(string Numb)
 {
-    int size = Numb.Length;
-    int sum = Convert.ToInt32(Numb[0]);
-    int FerstNumb = Convert.ToInt32(Numb[0]);
-    for (int i = 1; i <= size; i++)
-    {
-        sum = FerstNumb + Numb[i];
+        int sum = 0;
+        for (int i = 0; i <= size; i++)
+        {
+        sum = sum + Numb[i];
     }
+
+    
   return sum;
 }*/
 //Задача 29: Напишите программу, которая задаёт массив из 8 элементов и 
 //выводит их на экран. (числа берете любые)
-int[] Array = GetArray(8);
+/*int[] Array = GetArray(8);
 Console.WriteLine($"{String.Join("; ", Array)}");
 //Метод--------------------------------------------------------
 int[] GetArray(int size)
@@ -45,4 +47,4 @@ for (int i = 0; i < size; i++)
     Array[i] = new Random().Next();
 }
 return Array;
-}
+}*/
