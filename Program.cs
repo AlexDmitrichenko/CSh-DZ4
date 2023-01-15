@@ -24,11 +24,25 @@ Console.WriteLine($"Сумма цифр в числе: {GetSum(Numb)}");
 int GetSum(string N)
 {
     int size = Numb.Length;
-    int sum = Numb[0];
-    /*int FerstNumb = Numb[0];
+    int sum = Convert.ToInt32(Numb[0]);
+    int FerstNumb = Convert.ToInt32(Numb[0]);
     for (int i = 1; i <= size; i++)
     {
         sum = FerstNumb + Numb[i];
-    }*/
- //   return sum;
-//}
+    }
+  return sum;
+}*/
+//Задача 29: Напишите программу, которая задаёт массив из 8 элементов и 
+//выводит их на экран. (числа берете любые)
+int[] Array = GetArray(8);
+Console.WriteLine($"{String.Join("; ", Array)}");
+//Метод--------------------------------------------------------
+int[] GetArray(int size)
+{
+ int[] Array = new int[size];
+for (int i = 0; i < size; i++)
+{
+    Array[i] = new Random().Next();
+}
+return Array;
+}
