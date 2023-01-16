@@ -19,18 +19,21 @@ int GetDegree(int Num1)
 //цифр в числе. 452-> 11, 82-> 10, 9012-> 12
 /*Console.Write("Введите число: ");
 string Numb = Console.ReadLine()!;
-int Numb1 = Convert.ToInt32(Console.ReadLine());
-int size = Numb.Length;
+int Numb1 = Convert.ToInt32(Convert.ToString(Numb));
 Console.WriteLine($"Сумма цифр в числе: {GetSum(Numb1)}");
 //Метод --------------------------------------------------------
 int GetSum(int Numb1)
 {
-        int sum = 0;
-        for (int i = 0; i <= size; i++)
-        {
-        sum = sum + Numb[i];
+    int size = Numb.Length;
+    int sum = 0;
+    int temp = Numb1;
+    if (size == 1) return Numb1;
+    for (int i = 1; i < size; i++)
+    {
+        sum = sum + (temp % 10); temp = temp / 10;
     }
-  return sum;
+    int sumComp = sum + temp;
+    return sumComp;
 }*/
 //Задача 29: Напишите программу, которая задаёт массив из 8 элементов и 
 //выводит их на экран. (числа берете любые)
